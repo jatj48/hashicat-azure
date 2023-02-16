@@ -106,7 +106,7 @@ resource "azurerm_public_ip" "catapp-pip" {
   domain_name_label   = "${var.prefix}-meow"
 }
 
-resource "azurerm_linux_virtual_machine" "catapp" {
+resource "azurerm_virtual_machine" "catapp" {
   name                            = "${var.prefix}-meow"
   location                        = azurerm_resource_group.myresourcegroup.location
   resource_group_name             = azurerm_resource_group.myresourcegroup.name
