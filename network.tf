@@ -4,7 +4,7 @@ provider "azurerm" {
 
 resource "azurerm_resource_group" "myresourcegroup" {
   name     = "${var.prefix}-workshop"
-  location = "var.location
+  location = var.location
 }
 
 module "network" {
